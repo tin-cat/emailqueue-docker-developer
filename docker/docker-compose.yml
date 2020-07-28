@@ -12,7 +12,7 @@ services:
         networks:
             - emailqueue
         volumes:
-            - ../application.config.inc.php:/emailqueue/config/application.config.inc.php
+            - ../emailqueue:/emailqueue:cached
 
     emailqueue-mariadb:
         image: mariadb
